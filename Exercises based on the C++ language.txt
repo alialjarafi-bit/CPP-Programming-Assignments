@@ -1,0 +1,2696 @@
+#include<iostream>
+
+using namespace std;
+
+
+
+int main()
+{
+
+	int dddd = -1;
+	int choice = -1;
+
+	while (true)
+	{
+
+
+		cout << "=============== enter number 7 the Won Assignment ========================" << endl;
+		cout << "=========== inter number  2  the tow  Assignment =================\n";
+		cout << "<<<<<<<<<<<<< lec 3 >>>>>>>>>>>>>>>>>>>>>>" << endl;
+		cout << "=============== enter number 4  the free Assignment ========================" << endl;
+		cout << "=============== enter number 5  the fourth Assignment ========================" << endl;
+		cout << "=============== enter number 6 the fifth Assignment ========================" << endl;
+		cout << "=============== enter number 7 the sixth Assignment ========================" << endl;
+		cin >> dddd;
+
+		while (dddd == 1)
+		{
+
+			cout << "\n\n\n choice  from 1  to 17  : ";
+			cin >> choice;
+			if (choice == 0)
+			{
+				break;
+			}
+
+
+
+			else if (choice == 1)
+			{
+
+				cout << "============== 1 =====================" << endl;
+				string name;
+				int age;
+				cout << "enter your name : ";
+				cin >> name;
+				cout << "enter your age : ";
+				cin >> age;
+
+				cout << "Welcom " << name << "  you are " << age << "  years old " << endl;
+			}
+
+			else if (choice == 2)
+			{
+				cout << "================= 2 ===============" << endl;
+				double  num1, num2;
+				cout << "enter num1 : ";
+				cin >> num1;
+				cout << "enter num2 : ";
+				cin >> num2;
+
+				cout << "sum = " << num1 + num2 << endl;
+
+				cout << "sum = " << num1 - num2 << endl;
+
+				cout << "sum = " << num1 * num2 << endl;
+
+				cout << "sum = " << num1 / num2 << endl;
+			}
+
+
+			else if (choice == 3)
+			{
+
+				cout << "=========== 3 ===============" << endl;
+				int num;
+				cout << "enter the num : ";
+				cin >> num;
+				if (num > 0)
+					cout << "Positive " << endl;
+				else if (num < 0)
+					cout << "Negative" << endl;
+				else cout << "  zero" << endl;
+
+			}
+
+
+			else if (choice == 4)
+			{
+
+				cout << "=========== 4 ===============" << endl;
+
+
+				int grade;
+				cout << "enter your grade : ";
+				cin >> grade;
+
+				if (grade >= 90 && grade <= 100)
+					cout << "Excellent" << endl;
+				else if (grade >= 80)
+					cout << "Very Good" << endl;
+				else if (grade >= 70)
+					cout << "Good" << endl;
+				else if (grade >= 60)
+					cout << "Pass" << endl;
+				else
+					cout << "Fail" << endl;
+			}
+
+			//////////////////////////////////////////////
+
+
+			else if (choice == 5)
+			{
+
+				cout << "=========== 5 ===============" << endl;
+
+				int a, b, c;
+				cout << "enter the number : ";
+				cin >> a >> b >> c;
+				int d;
+				d = a;
+				if (b > d) d = b;
+				if (c > d) d = c;
+
+				cout << "the number is " << d << endl;
+			}
+			//////////////////////////////////////////////////
+
+			else if (choice == 6)
+			{
+				cout << "=========== 6 ===============" << endl;
+				double weight, height;
+				cout << "enter the weight and height :";
+				cin >> weight;
+				cout << "enter the height: ";
+
+				cin >> height;
+				double bim = weight / (height * height);
+				cout << "the Bmi is " << bim << endl;
+
+			}
+
+
+			////////////////////////////////////////////////////
+
+
+			else if (choice == 7)
+			{
+
+				cout << "=========== 7 ===============" << endl;
+
+
+				int a, b;
+				cout << "enter  a : ";
+				cin >> a;
+				cout << "enter  b : ";
+				cin >> b;
+				int z = (a + b) * (a - b);
+				cout << "Result " << z << endl;
+
+			}
+
+			/////////////////////////////////////////////////
+
+
+			else if (choice == 8)
+			{
+				cout << "<<<<<<<<<<<<<<<< 8 >>>>>>>>>>>>>>>>>>>" << endl;
+
+
+				long long phone;
+				cout << "enter the number phone : ";
+				cin >> phone;
+
+				if ((phone >= 770000000 && phone <= 789999999) || (phone >= 730000000 && phone <= 739999999) || (phone >= 700000000 && phone <= 719999999))
+				{
+					cout << " The phone is yemen ";
+
+				}
+				else {
+					cout << "Not yemen ";
+				}
+
+			}
+
+			//////////////////////////////////////////////
+
+
+			else if (choice == 9)
+			{
+
+
+				cout << "<<<<<<<<<<<<<<<< 9 >>>>>>>>>>>>>>>>>>>" << endl;
+
+				int age;
+				string gender;
+				cout << "enter  Age : ";
+				cin >> age;
+				cout << "enter gender  (Male / female) : ";
+				cin >> gender;
+				if (age < 30) {
+					if (gender == "male") {
+						cout << "You are av young   man  and < 30 " << endl;
+					}
+					else {
+
+						cout << "You are a young   woman  and < 30 " << endl;
+					}
+				}
+
+				else if (age >= 30)
+				{
+					cout << "Adult " << endl;
+
+				}
+			}
+			//////////////////////////////////////////////////
+
+
+			else if (choice == 10)
+			{
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< for loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+				for (int i = 1; i <= 19; i++)
+				{
+					cout << i << "   ";
+				}
+
+
+				cout << endl;
+
+			}
+			//////////////////////////////////////////////////
+
+
+
+			else if (choice == 11)
+			{
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< while loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+
+				int i = 1;
+				while (i <= 19)
+				{
+					cout << i << "  ";
+					i++;
+				}
+
+				cout << endl;
+			}
+			///////////////////////////////////////////////
+
+			else if (choice == 12)
+			{
+
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< do while  loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+				int b = 1;
+
+				do {
+					cout << b << "  ";
+					b++;
+				} while (b <= 19);
+
+			}
+
+
+			//////////////////////////////////////////////////
+
+			else if (choice == 13)
+			{
+
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< for loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+				for (int i = 1; i <= 19; i += 2)
+				{
+					cout << i << "   ";
+				}
+
+
+				cout << endl;
+
+			}
+
+			////////////////////////////////////////////////////////
+
+			else if (choice == 14)
+			{
+
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< while loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+
+				int s = 1;
+				while (s <= 19)
+				{
+					cout << s << "  ";
+					s += 2;
+				}
+
+				cout << endl;
+			}
+
+			///////////////////////////////////////////////
+
+			else if (choice == 15)
+			{
+
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< do while  loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+				int c = 1;
+
+				do {
+					cout << c << "  ";
+					c += 2;
+				} while (c <= 19);
+
+				cout << endl;
+
+
+			}
+			else if (choice == 16)
+			{
+				cout << "\n\n<<<<<<<<<<<<<<<<<<<<< for loop >>>>>>>>>>>>>>>>>>>>>>\n";
+
+				int n;
+				cout << "enter the nuber n :";
+				cin >> n;
+				for (int i = 1; i <= n; i++)
+				{
+					if (i % 7 == 0)
+						cout << i << "  ";
+				}
+				cout << endl;
+
+			}
+
+
+			else if (choice == 17)
+			{
+
+
+				cout << "\n\n<<<<<<<<<<<<<<<<<<< while loop >>>>>>>>>>>>>>>>>>.>>>>>>>" << endl;
+
+
+				int g = 1;
+				while (g <= 100)
+				{
+					cout << g << "  ";
+					if (g % 9 == 0)
+						break;
+					g++;
+				}
+
+				cout << endl;
+			}
+
+
+
+		}
+
+		/////////////////////////
+		/////////////////////////
+
+		while (dddd == 2)
+		{
+
+
+
+			cout << "\n\n\n choice from 1 to 10  : ";
+			cin >> choice;
+			if (choice == 0)
+			{
+				break;
+			}
+
+			else if (choice == 1)
+			{
+				int  arr[5];
+
+
+
+				for (int i = 0; i < 5; i++)
+				{
+					cout << "enter the arr : ";
+					cin >> arr[i];
+
+				}
+
+				//cout << arr[i];
+
+				for (int j = 0; j < 5; j++)
+				{
+					cout << arr[j] << endl;
+				}
+
+			}
+
+
+			else if (choice == 2)
+			{
+				cout << "===============<<<< 3 >>>>>>>>" << endl;
+				int p;
+				cin >> p;
+				int ar[43];
+
+				cout << "enter the num x";
+
+				for (int i = 0; i < p; i++)
+				{
+					cin >> ar[p];
+
+
+				}
+			}
+
+
+			else if (choice == 3)
+			{
+
+				cout << "=========================<<<< 4 >>>>>>>>>>>" << endl;
+				int sum = 0;
+				int arr3[5];
+				for (int i = 0; i < 5; i++)
+				{
+					cin >> arr3[i];
+					sum += arr3[i];
+
+
+				}
+
+				cout << sum;
+			}
+
+
+			else if (choice == 4)
+			{
+
+				cout << "==============================<<< 5 >> ===============" << endl;
+
+				int mark[7];
+				int Ave = 0;
+				int sum = 0;
+				for (int i = 0; i < 7; i++)
+				{
+					cin >> mark[i];
+
+					sum += mark[i];
+					Ave = sum / 7;
+				}
+
+				cout << Ave;
+
+			}
+
+
+			else if (choice == 5)
+			{
+
+				cout << "==============================<<< 6  >> ===============" << endl;
+
+
+				int n[15] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 };
+				int max = n[0];
+				int AA = n[0];
+				for (int i = 0; i < 15; i++)
+				{
+					if (max <= n[i])
+						max = n[i];
+
+
+					if (AA >= n[i])
+						AA = n[i];
+
+
+				}
+				cout << max << endl;
+				cout << AA << endl;
+
+
+			}
+
+
+			else if (choice == 6)
+			{
+
+				cout << "===========<<< 7 >>===============" << endl;
+
+				int arr[5] = { 1,3,4,30,33 };
+				int sum = 0;
+				int mulit = 1;
+				for (int i = 0; i < 5; i++)
+				{
+					if (arr[i] % 2 == 0)
+						sum += arr[i];
+					if (arr[i] % 2 != 0)
+						mulit *= arr[i];
+				}
+				cout << "sum = " << sum << endl;
+				cout << "mulit = " << mulit << endl;
+
+			}
+
+
+			else if (choice == 7)
+			{
+
+				cout << "<<<<<<<<<<<<<<<<<<   8 >>>>>>>>>>>>>>>>>>>>>>>>>." << endl;
+
+
+				int arr1[5];
+				int arr2[5];
+
+
+				cout << "enter 5 numbers : " << endl;;
+				for (int i = 0; i < 5; i++)
+				{
+					cin >> arr1[i];
+				}
+				for (int i = 0; i < 5; i++)
+				{
+					arr2[i] = arr1[i];
+				}
+				cout << "the  copied array is :" << endl;
+				for (int i = 0; i < 5; i++)
+				{
+					cout << arr2[i] << endl;
+				}
+
+			}
+
+
+
+			else if (choice == 8)
+			{
+				cout << "<><><><>><><< 9 <><><<><><>><><><>" << endl;
+
+				int arr1[15];
+
+				int Even = 0, sumEven = 0;
+				int Positiv = 0, sumpos = 0;
+				int Odd = 0, sumodd = 0;
+				int Nagtiv = 0, sumNag = 0;
+
+				for (int i = 0; i < 15; i++)
+				{
+					cout << "enter 15 numbers " << endl;
+					cin >> arr1[i];
+				}
+				for (int i = 0; i < 15; i++)
+				{
+					if (arr1[i] % 2 == 0) {
+						cout << Even;
+						sumEven += arr1[i];
+					}
+					else {
+						Odd++;
+						sumodd += arr1[i];
+					}
+					if (arr1[i] > 0)
+					{
+						Nagtiv++;
+						sumNag += arr1[i];
+
+					}
+					else {
+						Positiv++;
+						sumpos += arr1[i];
+
+					}
+				}
+				cout << "The Positive number = " << Positiv << " | sum : " << sumpos << endl;
+				cout << "The Negative number = " << Nagtiv << " | sum : " << sumNag << endl;
+				cout << "the Even number = " << Even << "| sum : " << sumEven << endl;
+				cout << "The odd number = " << Odd << " | sum : " << sumodd << endl;
+
+
+			}
+
+
+			else if (choice == 9)
+			{
+
+
+
+
+				cout << "<><><><>><><< 10 <><><<><><>><><><>" << endl;
+
+				int arr[6] = { 1,2,3,4,5,6 };
+				for (int i = 5; i >= 0; i--)
+				{
+					cout << arr[i] << endl;
+				}
+
+			}
+
+
+
+			else if (choice == 10)
+			{
+
+
+				cout << "<><><><>><><< 11 <><><<><><>><><><>" << endl;
+
+				int arr1[] = { 1,4,5,6 };
+				int arr2[] = { 8,9,87 };
+				int arr3[7];
+				//int s = 4;
+
+				for (int i = 0; i < 4; i++)
+					arr3[i] = arr1[i];
+
+				for (int i = 0; i < 3; i++)
+					arr3[i + 4] = arr2[i];
+
+
+
+				for (int i = 0; i < 7; i++)
+					cout << arr3[i] << endl;
+
+			}
+			else
+			{
+
+				cout << "Not number";
+			}
+
+
+
+
+		}
+
+		while (dddd == 3)
+		{
+
+
+			cout << "choice number frm 1 to  10 :";
+			cin >> choice;
+			if (choice == 0)
+			{
+				break;
+			}
+
+			else if (choice == 1)
+			{
+
+				int arr1[5][5];
+
+				for (int i = 0; i < 5; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						cout << i << "[" << j << "]";
+						cin >> arr1[i][j];
+					}
+
+
+				}
+
+				for (int i = 0; i < 5; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						cout << arr1[i][j];
+					}
+				}
+
+			}
+
+			else if (choice == 2)
+			{
+				cout << "<<<<<<<<<<<<<<<<<<<<<< 3 >>>>>>>>>>>>>>" << endl;
+				int n;
+				int h;
+				cout << "enter the Row fro 1 to 15 : ";
+				cin >> n;
+
+				cout << "enter the col fro 1 to 15 : ";
+				cin >> h;
+				int arr1[15][15];
+
+				if (arr1[15][15] > 15)
+				{
+					break;
+					for (int i = 0; i < n; i++)
+					{
+
+						for (int j = 0; j < h; j++)
+						{
+
+							cout << "[" << i << "]" << "[" << j << "]" << endl;
+							cin >> arr1[i][j];
+						}
+					}
+				}
+				for (int i = 0; i < n; i++)
+				{
+
+					for (int j = 0; j < h; j++)
+					{
+
+						cout << "[" << i << "]" << "[" << j << "]" << endl;
+						cout << arr1[i][j];
+					}
+				}
+			}
+
+
+			else if (choice == 3)
+			{
+
+
+
+				cout << "=========================<<<< 4 >>>>>>>>>>>" << endl;
+				int sum = 0;
+				int arr3[2][2];
+				for (int i = 0; i < 2; i++)
+				{
+					for (int j = 0; j < 2; j++) {
+						cin >> arr3[i][j];
+						sum += arr3[i][j];
+					}
+				}
+				cout << sum << endl;
+			}
+
+			else if (choice == 4)
+			{
+				cout << "=========================<<<< 5 >>>>>>>>>>>" << endl;
+
+
+				int mark[7][7];
+				double  Ave;
+				int sum;
+				int topstudent = 0;
+				int maxAve = -1;
+
+				for (int i = 0; i < 7; i++)
+				{
+					cout << "enter marks for student  " << i + 1 << endl;
+					sum = 0;
+					for (int j = 0; j < 7; j++) {
+
+						cin >> mark[i][j];
+
+						if (mark[i][j] < 0 || mark[i][j] > 100) {
+
+							j--;
+						}
+						else {
+
+							sum += mark[i][j];
+						}
+
+					}
+					Ave = sum / 7.0;
+
+					cout << "student " << i + 1 << ": [" << Ave << "] " << endl << endl;
+					if (Ave > maxAve)
+					{
+						maxAve = Ave;
+						topstudent = i + 1;
+					}
+				}
+				cout << "\n------------------------------------" << endl;
+				cout << "Top  Student : " << topstudent << "with Average : " << maxAve << endl << endl;
+			}
+
+
+
+
+
+			else if (choice == 5)
+			{
+
+
+
+
+				cout << "==============================<<< 6  >> ===============" << endl;
+
+
+				int n[3][5] = { {1,2,3,4,5}, {6, 7, 8, 9, 10},{11, 12, 13, 14, 15}
+				};
+				int max = n[0][0];
+				int AA = n[0][0];
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						if (max <= n[i][j])
+							max = n[i][j];
+
+
+						if (AA >= n[i][j])
+							AA = n[i][j];
+					}
+
+				}
+				cout << "Max value : " << max << endl;
+				cout << "Min value : " << AA << endl;
+
+
+
+			}
+
+
+			else if (choice == 6)
+			{
+
+
+
+				cout << "===========<<< 7 >>===============" << endl;
+
+				int arr[3][5] = { {1,4,5,6,7},{9,4,2,5,8},{7,5,3,2,4} };
+				int sum = 0;
+				long long  mulit = 1;
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						if (arr[i][j] % 2 == 0) {
+							sum += arr[i][j];
+						}
+						if (arr[i][j] % 2 != 0) {
+							mulit *= arr[i][j];
+						}
+					}
+				}
+				cout << "sum = " << sum << endl;
+				cout << "mulit = " << mulit << endl;
+
+
+
+			}
+
+
+			else if (choice == 7)
+			{
+
+
+
+				cout << "<<<<<<<<<<<<<<<<<<   8 >>>>>>>>>>>>>>>>>>>>>>>>>." << endl;
+
+
+				int arr1[3][3];
+				int arr2[3][3];
+
+
+				cout << "enter 1 to 9 numbers : " << endl;;
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 3; j++) {
+						cin >> arr1[i][j];
+					}
+				}
+
+				for (int i = 0; i < 3; i++)
+				{
+
+					for (int j = 0; j < 3; j++) {
+
+						arr2[i][j] = arr1[i][j];
+					}
+				}
+				cout << "the  copied array is :" << endl;
+				for (int i = 0; i < 3; i++)
+				{
+
+					for (int j = 0; j < 3; j++) {
+
+						cout << arr2[i][j] << "  ";
+					}
+					cout << endl;
+				}
+
+
+			}
+
+
+			else if (choice == 8)
+			{
+
+
+
+				cout << "<><><><>><><< 9 <><><<><><>><><><>" << endl;
+
+				int arr1[3][5];
+
+				int Even = 0, sumEven = 0;
+				int Positiv = 0, sumpos = 0;
+				int Odd = 0, sumodd = 0;
+				int Nagtiv = 0, sumNag = 0;
+
+
+				cout << "enter 15 numbers " << endl;
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						cin >> arr1[i][j];
+					}
+				}
+
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						if (arr1[i][j] % 2 == 0) {
+							Even++;
+							sumEven += arr1[i][j];
+						}
+						else {
+							Odd++;
+							sumodd += arr1[i][j];
+						}
+						if (arr1[i][j] > 0)
+						{
+							Nagtiv++;
+							sumNag += arr1[i][j];
+
+						}
+						else {
+							Positiv++;
+							sumpos += arr1[i][j];
+
+						}
+					}
+				}
+				cout << "The Positive number = " << Positiv << " | sum : " << sumpos << endl;
+				cout << "The Negative number = " << Nagtiv << " | sum : " << sumNag << endl;
+				cout << "the Even number = " << Even << "| sum : " << sumEven << endl;
+				cout << "The odd number = " << Odd << " | sum : " << sumodd << endl << endl;
+
+
+
+
+			}
+
+
+			else if (choice == 9)
+			{
+
+
+
+				cout << "===================== 10 ==========================" << endl;
+
+				int arr[3][3] = { {1,2,3},{3,5,6},{4,9,8} };
+				for (int i = 2; i >= 0; i--)
+				{
+					for (int j = 2; j >= 0; j--)
+					{
+
+
+						cout << arr[i][j] << " ";
+
+
+					}
+
+					cout << endl;
+
+				}
+
+
+			}
+
+
+			else if (choice == 10)
+			{
+
+
+				cout << "<<<<<<<<<<<<<<<<< 11 >>>>>>>>>>>>>>>>>>>>>>>" << endl;
+
+				int arr1[2][2] = { { 1,4 }, { 5, 6 } };
+				int arr2[2][2] = { {8,9},{0,87} };
+				int arr3[4][2];
+
+
+				for (int i = 0; i < 2; i++) {
+					arr3[0][i] = arr1[0][i];
+					arr3[1][i] = arr1[1][i];
+				}
+				for (int i = 0; i < 2; i++) {
+					arr3[2][i] = arr2[0][i];
+					arr3[3][i] = arr2[1][i];
+				}
+
+
+				for (int i = 0; i < 4; i++) {
+					for (int j = 0; j < 2; j++) {
+						cout << arr3[i][j] << "  ";
+
+					}
+					cout << endl;
+				}
+				cout << endl;
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+		}
+		while (dddd == 4) {
+
+
+			cout << "\n\nchoice number do you need  for 1 to  7  :  ";
+			cin >> choice;
+			if (choice = 0) {
+				break;
+			}
+
+			else if (choice = 1) {
+				int arrr[6] = { 4,2,5,8,9,1 };
+				int n = 6, temp;
+
+
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						if (arrr[i] > arrr[j]) {
+							temp = arrr[i];
+							arrr[i] = arrr[j];
+							arrr[j] = temp;
+						}
+					}
+				}
+				cout << "\n  Descending order  : ";
+				for (int i = 0; i < n; i++) {
+					cout << arrr[i] << "   ";
+				}
+
+
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						if (arrr[i] < arrr[j]) {
+							temp = arrr[i];
+							arrr[i] = arrr[j];
+							arrr[j] = temp;
+						}
+					}
+				}
+
+				cout << "\n Ascending  order   : ";
+				for (int j = 0; j < n; j++) {
+					cout << arrr[j] << "   ";
+				}
+
+
+			}
+			else if (choice = 2) {
+
+				int arr11[7] = { 1,2,3,4,5,6,7 };
+				for (int i = 0; i < 7; i++) {
+					cout << arr11[i] << "   ";
+				}
+				cout << endl;
+				arr11[3] = 100;
+
+				for (int i = 0; i < 7; i++) {
+					cout << arr11[i] << "   ";
+
+
+				}
+
+			}
+			else if (choice = 3) {
+
+				int arry[4] = { 1,2,3,4 };
+
+				int pos;
+				cout << "enter index to delet (0 - 4) : ";
+				cin >> pos;
+				for (int i = 0; i < 4; i++) {
+					cout << "Before deletion : " << arry[i] << "   ";
+				}
+				cout << endl;
+				arry[0] = 0;
+				for (int i = 0; i < 4; i++) {
+					if (arry[i] != 0) {
+						cout << "After deletion : " << arry[i] << "   ";
+					}
+				}
+
+
+			}
+			else if (choice = 4) {
+
+				int arr[5];
+				for (int i = 0; i < 5; i++) {
+					cout << "enter value for position " << i << " :  ";
+
+					cin >> arr[i];
+
+				}
+				cout << " All values : ";
+				for (int i = 0; i < 5; i++) {
+					cout << arr[i] << "  ";
+				}
+
+			}
+			else if (choice = 5) {
+
+				int arr5[5] = { 6,7,10,9,8 };
+				int input;
+				bool exists = false;
+
+				cout << " the arrays : " << endl;
+				for (int i = 0; i < 5; i++) {
+
+					cout << arr5[i] << "\t";
+
+
+				}
+				cout << endl;
+				cout << "\n enter a new number to check : ";
+				cin >> input;
+				for (int i = 0; i < 5; i++) {
+
+					if (arr5[i] == input) {
+						exists = true;
+						break;
+					}
+
+				}
+				if (exists) {
+					cout << "\nError : this value already exists in the matrix! " << endl;
+				}
+				else {
+					cout << "Success: this is a unique value." << input << endl;
+				}
+
+
+			}
+			else if (choice = 6) {
+
+				int a[3] = { 10,9,1 };
+				int b[3] = { 10,10,10 };
+				int c[3];
+				int total = 0;
+				for (int i = 0; i < 3; i++) {
+					c[i] = a[i] + b[i];
+
+				}
+				cout << "Result of sum : ";
+				for (int i = 0; i < 3; i++) {
+					cout << c[i] << " ";
+				}
+				cout << endl << endl;
+				for (int i = 0; i < 3; i++) {
+					total += a[i];
+				}
+
+				for (int i = 0; i < 3; i++) {
+					total += b[i];
+				}
+				c[0] = total;
+				c[1] = 0;
+				c[2] = 0;
+				cout << " Total sum in array c[0] is : " << c[0] << endl;
+
+			}
+			else if (choice = 7) {
+
+
+				int a[3] = { 10,9,1 };
+				int b[3] = { 10,10,10 };
+				int c[3];
+				int total = 1;
+				for (int i = 0; i < 3; i++) {
+					c[i] = a[i] * b[i];
+
+				}
+				cout << "Result of sum : ";
+				for (int i = 0; i < 3; i++) {
+					cout << c[i] << " ";
+				}
+				cout << endl << endl;
+				for (int i = 0; i < 3; i++) {
+					total *= a[i];
+				}
+
+				for (int i = 0; i < 3; i++) {
+					total *= b[i];
+				}
+				c[0] = total;
+				c[1] = 0;
+				c[2] = 0;
+				cout << " Total sum in array c[0] is : " << c[0] << endl;
+
+
+			}
+
+
+
+
+
+
+		}
+
+		while (dddd == 5)
+		{
+
+
+			cout << "choice number frm 1 to  10 :";
+			cin >> choice;
+			if (choice == 0)
+			{
+				break;
+			}
+
+			else if (choice == 1)
+			{
+
+				int arr1[5][5];
+
+				for (int i = 0; i < 5; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						cout << i << "[" << j << "]";
+						cin >> arr1[i][j];
+					}
+
+
+				}
+
+				for (int i = 0; i < 5; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						cout << arr1[i][j];
+					}
+				}
+
+			}
+
+			else if (choice == 2)
+			{
+				cout << "<<<<<<<<<<<<<<<<<<<<<< 3 >>>>>>>>>>>>>>" << endl;
+				int n;
+				int h;
+				cout << "enter the Row fro 1 to 15 : ";
+				cin >> n;
+
+				cout << "enter the col fro 1 to 15 : ";
+				cin >> h;
+				int arr1[15][15];
+
+				if (arr1[15][15] > 15)
+				{
+					break;
+					for (int i = 0; i < n; i++)
+					{
+
+						for (int j = 0; j < h; j++)
+						{
+
+							cout << "[" << i << "]" << "[" << j << "]" << endl;
+							cin >> arr1[i][j];
+						}
+					}
+				}
+				for (int i = 0; i < n; i++)
+				{
+
+					for (int j = 0; j < h; j++)
+					{
+
+						cout << "[" << i << "]" << "[" << j << "]" << endl;
+						cout << arr1[i][j];
+					}
+				}
+			}
+
+
+			else if (choice == 3)
+			{
+
+
+
+				cout << "=========================<<<< 4 >>>>>>>>>>>" << endl;
+				int sum = 0;
+				int arr3[2][2];
+				for (int i = 0; i < 2; i++)
+				{
+					for (int j = 0; j < 2; j++) {
+						cin >> arr3[i][j];
+						sum += arr3[i][j];
+					}
+				}
+				cout << sum << endl;
+			}
+
+			else if (choice == 4)
+			{
+				cout << "=========================<<<< 5 >>>>>>>>>>>" << endl;
+
+
+				int mark[7][7];
+				double  Ave;
+				int sum;
+				int topstudent = 0;
+				int maxAve = -1;
+
+				for (int i = 0; i < 7; i++)
+				{
+					cout << "enter marks for student  " << i + 1 << endl;
+					sum = 0;
+					for (int j = 0; j < 7; j++) {
+
+						cin >> mark[i][j];
+
+						if (mark[i][j] < 0 || mark[i][j] > 100) {
+
+							j--;
+						}
+						else {
+
+							sum += mark[i][j];
+						}
+
+					}
+					Ave = sum / 7.0;
+
+					cout << "student " << i + 1 << ": [" << Ave << "] " << endl << endl;
+					if (Ave > maxAve)
+					{
+						maxAve = Ave;
+						topstudent = i + 1;
+					}
+				}
+				cout << "\n------------------------------------" << endl;
+				cout << "Top  Student : " << topstudent << "with Average : " << maxAve << endl << endl;
+			}
+
+
+
+
+
+			else if (choice == 5)
+			{
+
+
+
+
+				cout << "==============================<<< 6  >> ===============" << endl;
+
+
+				int n[3][5] = { {1,2,3,4,5}, {6, 7, 8, 9, 10},{11, 12, 13, 14, 15}
+				};
+				int max = n[0][0];
+				int AA = n[0][0];
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						if (max <= n[i][j])
+							max = n[i][j];
+
+
+						if (AA >= n[i][j])
+							AA = n[i][j];
+					}
+
+				}
+				cout << "Max value : " << max << endl;
+				cout << "Min value : " << AA << endl;
+
+
+
+			}
+
+
+			else if (choice == 6)
+			{
+
+
+
+				cout << "===========<<< 7 >>===============" << endl;
+
+				int arr[3][5] = { {1,4,5,6,7},{9,4,2,5,8},{7,5,3,2,4} };
+				int sum = 0;
+				long long  mulit = 1;
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						if (arr[i][j] % 2 == 0) {
+							sum += arr[i][j];
+						}
+						if (arr[i][j] % 2 != 0) {
+							mulit *= arr[i][j];
+						}
+					}
+				}
+				cout << "sum = " << sum << endl;
+				cout << "mulit = " << mulit << endl;
+
+
+
+			}
+
+
+			else if (choice == 7)
+			{
+
+
+
+				cout << "<<<<<<<<<<<<<<<<<<   8 >>>>>>>>>>>>>>>>>>>>>>>>>." << endl;
+
+
+				int arr1[3][3];
+				int arr2[3][3];
+
+
+				cout << "enter 1 to 9 numbers : " << endl;;
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 3; j++) {
+						cin >> arr1[i][j];
+					}
+				}
+
+				for (int i = 0; i < 3; i++)
+				{
+
+					for (int j = 0; j < 3; j++) {
+
+						arr2[i][j] = arr1[i][j];
+					}
+				}
+				cout << "the  copied array is :" << endl;
+				for (int i = 0; i < 3; i++)
+				{
+
+					for (int j = 0; j < 3; j++) {
+
+						cout << arr2[i][j] << "  ";
+					}
+					cout << endl;
+				}
+
+
+			}
+
+
+			else if (choice == 8)
+			{
+
+
+
+				cout << "<><><><>><><< 9 <><><<><><>><><><>" << endl;
+
+				int arr1[3][5];
+
+				int Even = 0, sumEven = 0;
+				int Positiv = 0, sumpos = 0;
+				int Odd = 0, sumodd = 0;
+				int Nagtiv = 0, sumNag = 0;
+
+
+				cout << "enter 15 numbers " << endl;
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						cin >> arr1[i][j];
+					}
+				}
+
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 5; j++)
+					{
+						if (arr1[i][j] % 2 == 0) {
+							Even++;
+							sumEven += arr1[i][j];
+						}
+						else {
+							Odd++;
+							sumodd += arr1[i][j];
+						}
+						if (arr1[i][j] > 0)
+						{
+							Nagtiv++;
+							sumNag += arr1[i][j];
+
+						}
+						else {
+							Positiv++;
+							sumpos += arr1[i][j];
+
+						}
+					}
+				}
+				cout << "The Positive number = " << Positiv << " | sum : " << sumpos << endl;
+				cout << "The Negative number = " << Nagtiv << " | sum : " << sumNag << endl;
+				cout << "the Even number = " << Even << "| sum : " << sumEven << endl;
+				cout << "The odd number = " << Odd << " | sum : " << sumodd << endl << endl;
+
+
+
+
+			}
+
+
+			else if (choice == 9)
+			{
+
+
+
+				cout << "===================== 10 ==========================" << endl;
+
+				int arr[3][3] = { {1,2,3},{3,5,6},{4,9,8} };
+				for (int i = 2; i >= 0; i--)
+				{
+					for (int j = 2; j >= 0; j--)
+					{
+
+
+						cout << arr[i][j] << " ";
+
+
+					}
+
+					cout << endl;
+
+				}
+
+
+			}
+
+
+			else if (choice == 10)
+			{
+
+
+				cout << "<<<<<<<<<<<<<<<<< 11 >>>>>>>>>>>>>>>>>>>>>>>" << endl;
+
+				int arr1[2][2] = { { 1,4 }, { 5, 6 } };
+				int arr2[2][2] = { {8,9},{0,87} };
+				int arr3[4][2];
+
+
+				for (int i = 0; i < 2; i++) {
+					arr3[0][i] = arr1[0][i];
+					arr3[1][i] = arr1[1][i];
+				}
+				for (int i = 0; i < 2; i++) {
+					arr3[2][i] = arr2[0][i];
+					arr3[3][i] = arr2[1][i];
+				}
+
+
+				for (int i = 0; i < 4; i++) {
+					for (int j = 0; j < 2; j++) {
+						cout << arr3[i][j] << "  ";
+
+					}
+					cout << endl;
+				}
+				cout << endl;
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+		}
+
+		while (dddd == 6) {
+
+
+
+
+
+			cout << "choice number 1  for  14  ::  ";
+			cin >> choice;
+			if (choice == 0)
+			{
+				break;
+			}
+			else if (choice == 1)
+			{
+
+				int arr1[3][3] = { {1,2,3},{4,5,6},{7,8,9} };
+				int s;
+
+				for (int i = 0; i < 3; i++)
+				{
+					for (int j = 0; j < 3; j++)
+					{
+						for (int x = 0; i < 3; i++) {
+							for (int y = 0; j < 3; j++) {
+								if (arr1[i][j] < arr1[x][y]) {
+									s = arr1[i][j];
+									arr1[i][j] =
+										arr1[x][y];
+									arr1[x][y] = s;
+								}
+							}
+						}
+					}
+
+
+
+				}
+				cout << "-- array after manual sorting (Ascending)--" << endl;
+
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << arr1[i][j] << "\t";
+
+
+					}
+					cout << endl;
+				}
+
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						for (int x = 0; x < 3; x++) {
+							for (int y = 0; y < 3; y++) {
+								if (arr1[i][j] > arr1[x][y]) {
+									s = arr1[i][j];
+									arr1[i][j] = arr1[x][y];
+									arr1[x][y] = s;
+								}
+							}
+						}
+					}
+				}
+
+				cout << "-- array after manual sorting (Descending)--" << endl;
+
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << arr1[i][j] << "\t";
+
+
+					}
+					cout << endl;
+				}
+
+
+			}
+			else if (choice == 2) {
+
+
+
+
+				int arre[3][3] = { {6,8,9},{8,99,44},{11,23,77} };
+				int num;
+				cout << "enter number to search : ";
+				cin >> num;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						if (arre[i][j] == num)
+							cout << "Found at : " << "[" << i << "]" << "[" << j << "]";
+
+					}
+				}
+				cout << endl;
+			}
+			else if (choice == 3) {
+
+				//cout << "تعديل عنصر يحدده المستحدم" << endl;
+
+				int arry[3][3] = { {11,22,33},{44,55,66},{77,88,99} };
+				int oldVal, newVal;
+
+				cout << "\n  befor updated array \n";
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << arry[i][j] << "  ";
+					}
+				}
+				cout << "\nenter value to change : ";
+				cin >> oldVal;
+				cout << "enter new value : ";
+				cin >> newVal;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						if (arry[i][j] == oldVal) {
+
+							arry[i][j] = newVal;
+						}
+					}
+
+				}
+
+				cout << "\n updated array \n";
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << arry[i][j] << "  ";
+					}
+				}
+
+
+			}
+			else if (choice == 4) {
+
+
+				//cout << " هدخال العناصر بدون تكرار" << endl;
+
+				int arrs[3][3], val, exists;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << "enter value for " << "[" << i << "]" << "[" << j << "] : ";
+						cin >> val;
+						exists = false;
+
+						for (int r = 0; r < 3; r++) {
+							for (int c = 0; c < 3; c++) {
+								if (arrs[r][c] == val) {
+									exists = true;
+									break;
+								}
+							}
+							if (exists) break;
+						}
+						if (!exists) {
+							arrs[i][j] = val;
+						}
+						else {
+							cout << "Repeated ";
+							j--;
+						}
+					}
+				}
+
+			}
+			else if (choice == 5) {
+
+
+				//cout <<  "جمع مصفوفتين في مصفوفه  ثالثه" << endl;
+				int a[2][2] = { {4,9},{20,30} }, b[2][2] = { {33,77},{88,1} }, c[2][2];
+
+				for (int i = 0; i < 2; i++) {
+					for (int j = 0; j < 2; j++) {
+						c[i][j] = a[i][j] + b[i][j];
+						cout << "c" << "[" << i << "]" << "[" << j << "] = " << c[i][j] << "  ";
+					}
+					cout << endl;
+				}
+
+
+
+
+			}
+			else if (choice == 6) {
+				//	cout << " ضرب مصفوفتين في مصفوفه  ثالثه" << endl;
+
+				int x[2][2] = { {4,9},{20,30} }, b[2][2] = { {33,77},{88,1} }, c[2][2];
+
+				for (int i = 0; i < 2; i++) {
+					for (int j = 0; j < 2; j++) {
+						c[i][j] = x[i][j] * b[i][j];
+						cout << "c" << "[" << i << "]" << "[" << j << "] = " << c[i][j] << "  ";
+					}
+					cout << endl;
+				}
+			}
+			else if (choice == 7) {
+
+				//cout << "تحويل مصفوفه ثنائيه   الى احاديه" << endl;
+				int arr[2][2] = { {5,10},{20,25} };
+				int b[4], k = 0;
+				for (int i = 0; i < 2; i++) {
+					for (int j = 0; j < 2; j++) {
+
+						b[k] = arr[i][j];
+						k++;
+
+
+					}
+				}
+				for (int i = 0; i < 4; i++) {
+					cout << "b[i] = " << b[i] << "   ";
+				}
+			}
+			else if (choice == 8) {
+
+
+				//cout << " جمع صف يحدده المستخدم" << endl;
+
+				int arr[2][2] = { {5,10},{20,25} };
+				int row, sum = 0;
+				cout << "enter row index   : ";
+				cin >> row;
+
+				if (row >= 0 && row < 2) {
+
+
+					for (int j = 0; j < 2; j++) {
+						sum += arr[row][j];
+					}
+					cout << "the sum of row " << row << " is " << sum << endl;
+				}
+				else {
+					cout << "Invalid row index " << endl;
+				}
+
+			}
+			else if (choice == 9) {
+
+				//cout << " جمع اعمده يحدده المستخدم" << endl;
+
+				int arr[2][2] = { {5,10},{20,25} };
+				int col, sum = 0;
+				cout << "enter row index   : ";
+				cin >> col;
+
+				if (col >= 0 && col < 2) {
+
+
+					for (int i = 0; i < 2; i++) {
+						sum += arr[i][col];
+					}
+					cout << "the sum of row " << col << " is " << sum << endl;
+				}
+				else {
+					cout << "Invalid row index " << endl;
+				}
+
+			}
+			else if (choice == 10) {
+				//cout << " طباعة عناصر القطر الرئيسي" << endl;
+
+				int arr[6][6] =
+				{ {5,10,1,5,6,7}
+				,{6,9,2,2,5,1}
+				,{4,10,70,20,2,10}
+				,{4,7,2,5,6,7}
+				,{6,8,2,3,5,1}
+				,{4,9,4,20,2,1} };
+
+				for (int i = 0; i < 6; i++)
+				{
+					for (int j = 0; j < 6; j++) {
+						if (i == j) {
+							cout << arr[i][j] << "\t";
+						}
+						else {
+							cout << " \t";
+						}
+					}
+					cout << endl;
+
+				}
+			}
+			else if (choice == 11) {
+				//cout << " طباعة عناصر القطر الفرعي" << endl;
+
+				int n;
+				int a[10][10];
+				cout << "enter size of array : ";
+				cin >> n;
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						cout << "enter element  [" << i << "] [" << j << "]  : ";
+						cin >> a[i][j];
+					}
+				}
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						cout << a[i][j] << "\t";
+					}
+					cout << endl;
+				}
+				cout << "secondry Diadonal elements " << endl;
+				for (int i = 0; i < n; i++) {
+					cout << a[i][n - 1 - i] << "  ";
+				}
+				cout << endl;
+
+
+
+			}
+			else if (choice == 12) {
+				//cout << "  جمع العناصر فوق  وتحت القطر الرئيسي " << endl;
+				int n;
+				cout << "enter size of array :";
+				cin >> n;
+
+				int b[100][100];
+				int sumAbov = 0;
+				int sumBelow = 0;
+				cout << "enter element  of array :";
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+
+						cout << " element  [" << i << "] [" << j << "]  : ";
+						cin >> b[i][j];
+					}
+				}
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						if (j > i) {
+							sumAbov += b[i][j];
+						}
+						else if (i > j) {
+							sumBelow += b[i][j];
+
+						}
+					}
+				}
+				cout << "\nsum of elemebt ABOVE : " << sumAbov << endl;
+
+				cout << "\nsum of elemebt BELOW  : " << sumBelow << endl;
+
+			}
+			else if (choice == 13) {
+				//cout << "  جمع العناصر فوق  وتحت القطر الرئيسي " << endl;
+				int n;
+				cout << "enter size of array :";
+				cin >> n;
+
+				int b[100][100];
+				int sumAbov = 0;
+				int sumBelow = 0;
+				cout << "enter element  of array :";
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+
+						cout << " element  [" << i << "] [" << j << "]  : ";
+						cin >> b[i][j];
+					}
+				}
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						if (i + j < n - 1) {
+
+							sumAbov += b[i][j];
+						}
+						else if (i + j > n - 1) {
+							sumBelow += b[i][j];
+
+						}
+					}
+				}
+				cout << "\nsum of Above secobdary  : " << sumAbov << endl;
+
+				cout << "\nsum of Below secondray  : " << sumBelow << endl;
+
+			}
+
+			else if (choice == 14) {
+
+				//cout << "  استبدال القطر الرئيسي بالقطر الثانوي " << endl;
+
+				int n;
+				int a[10][10];
+				cout << "enter size of array : ";
+				cin >> n;
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						cout << "enter element  [" << i << "] [" << j << "]  : ";
+						cin >> a[i][j];
+					}
+				}
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						if (i == j) {
+							int temp = a[i][j];
+							a[i][j] = a[i][n - 1 - i];
+							a[i][n - 1 - i] = temp;
+						}
+					}
+				}
+				cout << "\n The arrays after swapping : " << endl;
+				for (int i = 0; i < n; i++) {
+					for (int j = 0; j < n; j++) {
+						cout << a[i][j] << "\t";
+					}
+					cout << endl;
+				}
+
+			}
+
+
+
+
+		}
+		while (dddd == 7) {
+
+			cout << "choice number do you need  for  1  to   17 : ";
+			cin >> choice;
+			if (choice == 0) {
+				break;
+			}
+			else if (choice == 1) {
+				//cout << " يقوم بتبديل  الصفوف" << endl;
+
+				int s[3][3] = { {1,1,1},{2,2,2},{3,3,3} };
+				int r1 = 0;
+				int r2 = 1;
+
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << s[i][j] << "  ";
+					}
+					cout << endl;
+				}
+
+				cout << endl;
+
+				for (int j = 0; j < 3; j++) {
+					int temp = s[r1][j];
+					s[r1][j] = s[r2][j];
+					s[r2][j] = temp;
+
+				}
+				cout << "after swapping " << endl;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+
+						cout << s[i][j] << "  ";
+
+					}
+					cout << endl;
+				}
+			}
+			else if (choice == 2) {
+
+				//cout << " يقوم بتبديل  الاعمده" << endl;
+
+				int s[3][3] = { {1,2,3},{1,2,3},{1,2,3} };
+				int r1 = 0;
+				int r2 = 1;
+
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+
+						cout << s[i][j] << "  ";
+					}
+					cout << endl;
+				}
+
+				cout << endl;
+
+				for (int i = 0; i < 3; i++) {
+					int temp = s[i][r1];
+					s[i][r1] = s[i][r2];
+					s[i][r2] = temp;
+
+				}
+				cout << "after swapping " << endl;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						cout << s[i][j] << "  ";
+
+					}
+					cout << endl;
+				}
+
+				cout << endl;
+			}
+			else if (choice == 3) {
+
+				//cout << "حساب مجموع العناصر المحيطه" << endl;
+
+				int x[3][3] =
+				{ { 5 , 2 , 5}
+				,{ 6 , 5 , 4}
+				,{ 9 , 8 , 5}
+				};
+				int num, sum = 0;
+				bool found = false;
+				cout << "enter the element to find : ";
+				cin >> num;
+				for (int i = 0; i < 3; i++) {
+					for (int j = 0; j < 3; j++) {
+						if (x[i][j] == num) {
+							found = true;
+							for (int r = i - 1; r <= i + 1; r++) {
+								for (int c = j - 1; c <= j + 1; c++) {
+									if (r >= 0 && r < 3 && c >= 0 && c < 3 && !(r == i && c == j)) {
+										sum += x[r][c];
+									}
+								}
+							}
+							break;
+						}
+					}
+					if (found) break;
+				}
+
+				if (found) {
+					cout << "sum of array " << sum << endl;
+
+				}
+				else {
+					cout << "element not found! " << endl;
+				}
+
+
+
+			}
+
+
+			else if (choice == 4) {
+
+				int row = 3;
+				int col = 3;
+				int c[3][3] =
+				{ { 5 , 2 , 5}
+				,{ 6 , 5 , 4}
+				,{ 9 , 8 , 5}
+				};
+				int num;
+				int count = 0;
+
+				cout << "enter number  you want to count :  ";
+				cin >> num;
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						if (c[i][j] == num) {
+							count++;
+
+						}
+					}
+				}
+				if (count > 0) {
+					cout << "teh number " << num << " is  repeated " << count << " times. " << endl;
+				}
+				else {
+
+
+					cout << "teh number " << num << " was not found in the array " << endl;
+
+				}
+
+			}
+
+			else if (choice == 5) {
+
+				//cout << "جمع كل صف من صفوف المصفوفه" << endl;
+
+				int c[3][3] =
+				{ { 4 , 1 , 3}
+				,{ 6 , 5 , 4}
+				,{ 2 , 7 , 5}
+				};
+				int rowsum;
+				for (int i = 0; i < 3; i++) {
+					rowsum = 0;
+					for (int j = 0; j < 3; j++) {
+
+						rowsum += c[i][j];
+
+					}
+
+					cout << "sum of row is  : " << i << " = " << rowsum << endl;
+				}
+
+
+			}
+			else if (choice == 6) {
+
+
+				int c[3][3] =
+				{ { 4 , 1 , 3}
+				,{ 6 , 5 , 4}
+				,{ 2 , 7 , 5}
+				};
+				int colsum;
+				for (int j = 0; j < 3; j++) {
+					colsum = 0;
+					for (int i = 0; i < 3; i++)
+					{
+
+						colsum += c[j][i];
+
+					}
+
+					cout << "sum of col is  : " << j << " = " << colsum << endl;
+				}
+
+
+
+
+			}
+
+
+
+
+			else if (choice == 7) {
+
+				char d[3][3] = { { '1', '2', '3'}, { '4','5','6' },{ '7','8','9'} };
+				char player = 'X';
+				int choice;
+				int row, col;
+				bool gameWon = false;
+
+				for (int turns = 0; turns < 9 && !gameWon; turns++) {
+					cout << "\n-----------------------\n";
+
+					for (int i = 0; i < 3; i++) {
+						cout << "| ";
+						for (int j = 0; j < 3; j++) {
+							cout << d[i][j] << " | ";
+						}
+						cout << "\n--------------------------\n";
+					}
+					cout << "choice  the player : " << player << ": ";
+					cin >> choice;
+					row = (choice - 1) / 3;
+					col = (choice - 1) % 3;
+					if (choice < 1 || choice > 9 || d[row][col] == 'X' || d[row][col] == 'O') {
+						cout << "Error! The Square is already taken or the number is invalid Try again \n";
+						turns--;
+						continue;
+					}
+					d[row][col] == player;
+
+					for (int i = 0; i < 3; i++) {
+						if ((d[i][0] == d[i][1] && d[i][1] == d[i][2]) || (d[0][i] == d[1][i] && d[1][i] == d[2][i])) {
+							gameWon = true;
+
+
+
+						}
+					}
+					if ((d[0][0] == d[1][1] && d[1][1] == d[2][2]) || (d[0][2] == d[1][1] && d[1][1] == d[2][0])) {
+						gameWon = true;
+
+					}
+					if (gameWon) {
+						cout << "\n------------------------\n";
+						for (int i = 0; i < 3; i++) {
+							cout << "| ";
+							for (int j = 0; j < 3; j++) {
+								cout << d[i][j] << " | ";
+							}
+							cout << "\n-------------------------------\n";
+						}
+
+						cout << "winner is  " << player << "  !Congratulations  " << endl;
+						break;
+					}
+					else {
+						if (player == 'X') {
+
+							player = 'O';
+						}
+
+						else {
+
+							player = 'X';
+						}
+
+					}
+
+				}
+				if (!gameWon) {
+					cout << "Game over\n";
+					//break;
+				}
+				//player = (player == 'X') ? 'O' : 'X';
+
+			}
+
+			else if (choice == 8) {
+				int row = 5;
+				int col = 5;
+				char s[5][5];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+				s[0][2] = '*';
+				s[1][1] = '*'; s[1][2] = '*';
+				s[1][3] = '*';
+				s[2][0] = '*'; s[2][1] = '*';
+				s[2][2] = '*'; s[2][3] = '*';
+				s[2][4] = '*';
+				s[3][1] = '*'; s[3][2] = '*';
+				s[3][3] = '*';
+				s[4][2] = '*';
+
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl;
+				}
+
+			}
+			else if (choice == 9) {
+				int row = 9;
+				int col = 9;
+				char s[9][9];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+				s[0][4] = '*';
+
+				s[1][3] = '*'; s[1][4] = '*';
+				s[1][5] = '*';
+
+				s[2][2] = '*'; s[2][3] = '*';
+				s[2][4] = '*'; s[2][5] = '*';
+				s[2][6] = '*';
+
+				s[3][1] = '*'; s[3][2] = '*';
+				s[3][3] = '*'; s[3][4] = '*';
+				s[3][5] = '*'; s[3][6] = '*';
+				s[3][7] = '*';
+
+				s[4][0] = '*'; s[4][1] = '*';
+				s[4][2] = '*'; s[4][3] = '*';
+				s[4][4] = '*'; s[4][5] = '*';
+				s[4][6] = '*'; s[4][7] = '*';
+				s[4][8] = '*';
+
+				s[5][1] = '*'; s[5][2] = '*';
+				s[5][3] = '*'; s[5][4] = '*';
+				s[5][5] = '*'; s[5][6] = '*';
+				s[5][7] = '*';
+
+				s[6][2] = '*'; s[6][3] = '*';
+				s[6][4] = '*'; s[6][5] = '*';
+				s[6][6] = '*';
+
+
+
+				s[7][3] = '*'; s[7][4] = '*';
+				s[7][5] = '*';
+
+				s[8][4] = '*';
+
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl;
+				}
+			}
+
+			else if (choice == 10) {
+
+				int row = 7;
+				int col = 7;
+				char s[7][7];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+
+				s[0][0] = '*'; s[0][1] = '*';
+				s[0][2] = '*'; s[0][3] = '*';
+				s[0][4] = '*'; s[0][5] = '*';
+				s[0][6] = '*';
+
+				s[1][0] = '*'; s[1][1] = '*';
+				s[1][2] = '*'; s[1][3] = '*';
+				s[1][4] = '*';
+
+				s[2][0] = '*'; s[2][1] = '*';
+				s[2][2] = '*';
+
+				s[3][0] = '*';
+
+
+				s[4][0] = '*'; s[4][1] = '*';
+				s[4][2] = '*';
+
+
+				s[5][0] = '*'; s[5][1] = '*';
+				s[5][2] = '*'; s[5][3] = '*';
+				s[5][4] = '*';
+
+				s[6][0] = '*'; s[6][1] = '*';
+				s[6][2] = '*'; s[6][3] = '*';
+				s[6][4] = '*'; s[6][5] = '*';
+				s[6][6] = '*';
+
+				for (int i = 0; i < row; i++) {
+					cout << "    ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;;
+				}
+
+			}
+			else if (choice == 11) {
+
+
+				int row = 7;
+				int col = 7;
+				char s[7][7];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+
+				s[0][0] = '*'; s[0][1] = '*';
+				s[0][2] = '*'; s[0][3] = '*';
+				s[0][4] = '*'; s[0][5] = '*';
+				s[0][6] = '*';
+
+				s[1][1] = '*'; s[1][2] = '*';
+				s[1][3] = '*'; s[1][4] = '*';
+				s[1][5] = '*';
+
+				s[2][2] = '*'; s[2][3] = '*';
+				s[2][4] = '*';
+
+				s[3][3] = '*';
+
+
+				s[4][2] = '*'; s[4][3] = '*';
+				s[4][4] = '*';
+
+
+				s[5][1] = '*'; s[5][2] = '*';
+				s[5][3] = '*'; s[5][4] = '*';
+				s[5][5] = '*';
+
+				s[6][0] = '*'; s[6][1] = '*';
+				s[6][2] = '*'; s[6][3] = '*';
+				s[6][4] = '*'; s[6][5] = '*';
+				s[6][6] = '*';
+
+				for (int i = 0; i < row; i++) {
+					cout << "       ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;;
+				}
+			}
+
+			else if (choice == 12) {
+
+				int row = 5;
+				int col = 5;
+				char s[5][5];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+				s[0][0] = '*'; s[0][4] = '*';
+
+				s[1][1] = '*'; s[1][3] = '*';
+
+				s[2][2] = '*';
+
+				s[3][1] = '*'; s[3][3] = '*';
+
+				s[4][0] = '*'; s[4][4] = '*';
+
+				for (int i = 0; i < row; i++) {
+					cout << " ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j] << " ";
+					}
+					cout << endl << endl;;
+				}
+			}
+			else if (choice == 13) {
+
+				int row = 9;
+				int col = 9;
+				char s[9][9];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+				s[0][4] = '*';
+
+				s[1][3] = '*'; s[1][5] = '*';
+
+				s[2][2] = '*'; s[2][6] = '*';
+
+				s[3][1] = '*'; s[3][7] = '*';
+
+				s[4][0] = '*'; s[4][8] = '*';
+
+				s[5][1] = '*';
+				s[5][7] = '*';
+
+				s[6][2] = '*'; s[6][6] = '*';
+
+
+
+				s[7][3] = '*'; 	s[7][5] = '*';
+
+
+				s[8][4] = '*';
+
+				for (int i = 0; i < row; i++) {
+					cout << "        ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;
+				}
+			}
+
+			else if (choice == 14) {
+
+
+				int row = 4;
+				int col = 7;
+				char s[4][7];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+				s[0][0] = '*';
+
+				s[1][0] = '*'; s[1][1] = '*';
+				s[1][2] = '*';
+
+				s[2][0] = '*'; s[2][1] = '*';
+				s[2][2] = '*'; s[2][3] = '*';
+				s[2][4] = '*';
+
+				s[3][0] = '*'; s[3][1] = '*';
+				s[3][2] = '*'; s[3][3] = '*';
+				s[3][4] = '*'; s[3][5] = '*';
+				s[3][6] = '*';
+
+
+
+
+
+				for (int i = 0; i < row; i++) {
+					cout << " ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;;
+				}
+			}
+
+			else if (choice == 15) {
+
+
+				int row = 4;
+				int col = 7;
+				char s[4][7];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+
+
+				s[0][0] = '*'; s[0][1] = '*';
+				s[0][2] = '*'; s[0][3] = '*';
+				s[0][4] = '*'; s[0][5] = '*';
+				s[0][6] = '*';
+
+
+				s[1][2] = '*'; s[1][3] = '*';
+				s[1][4] = '*'; s[1][5] = '*';
+				s[1][6] = '*';
+
+				s[2][4] = '*'; s[2][5] = '*';
+				s[2][6] = '*';
+
+				s[3][6] = '*';
+
+
+				for (int i = 0; i < row; i++) {
+					cout << "        ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;;
+				}
+			}
+			else if (choice == 16) {
+
+
+				int row = 4;
+				int col = 7;
+				char s[4][7];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+
+				s[0][6] = '*';
+
+				s[1][4] = '*'; s[1][5] = '*';
+				s[1][6] = '*';
+
+
+				s[2][2] = '*'; s[2][3] = '*';
+				s[2][4] = '*'; s[2][5] = '*';
+				s[2][6] = '*';
+
+				s[3][0] = '*'; s[3][1] = '*';
+				s[3][2] = '*'; s[3][3] = '*';
+				s[3][4] = '*'; s[3][5] = '*';
+				s[3][6] = '*';
+
+
+
+
+
+				for (int i = 0; i < row; i++) {
+					cout << "        ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;;
+				}
+			}
+
+			else if (choice == 17) {
+
+
+				int row = 4;
+				int col = 7;
+				char s[4][7];
+				for (int i = 0; i < row; i++) {
+					for (int j = 0; j < col; j++) {
+						s[i][j] = ' ';
+					}
+				}
+
+
+				s[0][0] = '*'; s[0][1] = '*';
+				s[0][2] = '*'; s[0][3] = '*';
+				s[0][4] = '*'; s[0][5] = '*';
+				s[0][6] = '*';
+
+
+				s[1][0] = '*'; s[1][1] = '*';
+				s[1][2] = '*'; s[1][3] = '*';
+				s[1][4] = '*';
+
+
+				s[2][0] = '*'; s[2][1] = '*';
+				s[2][2] = '*';
+
+
+				s[3][0] = '*';
+
+
+				for (int i = 0; i < row; i++) {
+					cout << "        ";
+					for (int j = 0; j < col; j++) {
+						cout << s[i][j];
+					}
+					cout << endl << endl;;
+				}
+
+			}
+
+
+
+
+
+
+
+
+
+
+		}
+
+
+
+	}
+
+
+
+
+}
+ 
